@@ -46,4 +46,35 @@ fn main() {
     // Call the print_numbers function with a slice
     let numbers = [1, 2, 3, 4, 5];
     print_numbers(&numbers);
+
+    first_fn();
+    second_fn(32);
+    third_fn(45,"hello");
+    fourth_fn(55,'H');
+    ex();
+    let xy = return_value();
+    println!("The value of xy is {}", xy);
+}
+fn first_fn(){
+    println!("New function");
+}
+
+fn second_fn(x : i32){
+    println!("the value of x is {}",x);
+}
+fn third_fn(x: i32, y: &str){
+    println!("The vlaue of x is {}, and the value of y is {}",x ,y);
+}
+fn fourth_fn(x: i32, y: char){
+    println!("The vlaue of x is {}, and the value of y is {}",x,y);
+}
+fn ex(){
+    let y= {
+        let x = 9;
+    x + 1
+    };
+    println!("The value of y is {}",y);
+}
+fn return_value() -> i32{
+    78+1
 }
