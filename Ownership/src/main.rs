@@ -49,6 +49,20 @@ fn slice_example() {
     // Print the slice
     println!("Slice: {}", slice);
 }
+fn new(){
+    let x = 90;
+    println!("The value of x is {}",x);
+
+    let y = x;
+    println!("The value of y is {}",y); // memory is saved because the x is accessing the 8bit and is used by both x and y, If y = 90 then it will take extra 8bit.
+
+    //-------------------------------------
+
+    let a = String::from("Mohit Narayan");
+    let b = a.clone(); //this saves the memory
+
+    println!("{}-----{}",a,b);
+}
 
 fn main() {
     // Ownership Example
@@ -59,4 +73,5 @@ fn main() {
 
     // Slice Type Example
     slice_example();
+    new();
 }
