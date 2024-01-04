@@ -60,6 +60,12 @@ fn method_syntax_example() {
     person.greet();
 }
 
+struct User{
+    name : String,
+    company : String,
+    age : u32
+}
+
 fn main() {
     // Instantiating Structs Example
     instantiate_struct();
@@ -69,4 +75,12 @@ fn main() {
 
     // Method Syntax Example
     method_syntax_example();
+
+    let U1 = User{
+        name : String::from("Mohit narayan"),
+        company : String::from("ABC"),
+        age : 100
+    };
+
+    println!("My name is {} & My age is {} I am working in {}", U1.name,U1.age,U1.company);
 }
