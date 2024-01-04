@@ -76,11 +76,13 @@ fn main() {
     // Method Syntax Example
     method_syntax_example();
 
-    let U1 = User{
+    let mut U1 = User{
         name : String::from("Mohit narayan"),
         company : String::from("ABC"),
         age : 100
     };
+
+    U1.age = 200;
 
     println!("My name is {} & My age is {} I am working in {}", U1.name,U1.age,U1.company);
 }
