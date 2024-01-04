@@ -66,6 +66,15 @@ struct User{
     age : u32
 }
 
+fn user() -> User{
+    User{
+        name : String::from("Mohit narayan"),
+        company : String::from("ABC"),
+        age : 100,
+    }
+    
+}
+
 fn main() {
     // Instantiating Structs Example
     instantiate_struct();
@@ -76,13 +85,12 @@ fn main() {
     // Method Syntax Example
     method_syntax_example();
 
-    let mut U1 = User{
-        name : String::from("Mohit narayan"),
-        company : String::from("ABC"),
-        age : 100
-    };
+    let mut my_user = user();
 
-    U1.age = 200;
+    my_user.age = 200;
 
-    println!("My name is {} & My age is {} I am working in {}", U1.name,U1.age,U1.company);
+    println!(
+        "My name is {} & My age is {} I am working in {}",
+        my_user.name, my_user.age, my_user.company
+    );
 }
