@@ -23,5 +23,8 @@ fn printCars(car:CarTypes){
 
 fn main() {
     println!("Enums");
+    printCars(CarTypes::Hatchback);
+    printCars(CarTypes::Sedan);
     printCars(CarTypes::Suv);
+    printCars(CarTypes::Muv);
 }
