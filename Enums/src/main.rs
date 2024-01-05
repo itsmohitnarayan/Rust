@@ -1,3 +1,30 @@
+enum CarTypes{
+    Hatchback,
+    Sedan,
+    Suv,
+    Muv,
+}
+fn printCars(car:CarTypes){
+    match car{
+        CarTypes::Hatchback => {
+            println!("Small car in a segment");
+        }
+        CarTypes::Sedan => {
+            println!("Luxury car in a segment");
+        }
+        CarTypes::Suv => {
+            println!("Sports car in a segment");
+        }
+        CarTypes::Muv => {
+            println!("big  car in a segment");
+        }
+
+
+    }
+    
+}
+
 fn main() {
-    println!("Hello, world!");
+    println!("Enums");
+    printCars(CarTypes::Suv);
 }
