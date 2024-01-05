@@ -18,10 +18,7 @@ fn printCars(car:CarTypes){
         CarTypes::Muv => {
             println!("big  car in a segment");
         }
-
-
     }
-    
 }
 
 fn main() {
