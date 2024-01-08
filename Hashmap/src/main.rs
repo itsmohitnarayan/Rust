@@ -13,8 +13,18 @@ fn main() {
     marks.insert("Python", 90);
     marks.insert("Javascript", 70);
     marks.insert("C++", 90);
+    marks.insert("React", 90);
 
 
     println!("{:?}", marks);
+
+    //Find the length
+    println!("How many subject you have Studied {}", marks.len());
+
+    //Let match the value 
+    match marks.get("React") {
+        Some(mark) => println!("You Got {} in React", mark),
+        None => println!("You haven't Studied this YET!")
+    }
 
 }
