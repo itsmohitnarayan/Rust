@@ -1,6 +1,3 @@
-
-
-
 use std::{collections::HashMap, hash::Hash}; 
 fn main() {
     println!("Hashmap!");
