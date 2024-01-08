@@ -1,3 +1,13 @@
+use std::fs::File;
+use std::io::Write;
+
+
+
 fn main() {
-    println!("Hello, world!");
+    println!("Lets write into file!");
+
+    //let's create a new file
+    let mut my_file = File::create("Output.txt").expect("could not able to create file");
+    //write into file
+    my_file.write_all(b"Welcome to the channel Mohit Narayan").expect("Not able to wrute into file")
 }
