@@ -27,4 +27,18 @@ fn main() {
         None => println!("You haven't Studied this YET!")
     }
 
+    //Remove the value
+    marks.remove("Java");
+    println!("subjects remaining {}, remaining subjects are {:?}",marks.len(), marks);
+
+    // loop through hashmap
+    for (subject,mark) in &marks {
+        println!("For {} you got  {} marks", subject,mark);
+    }
+
+    //check the value 
+    print!("Did you studied C {} \n", marks.contains_key("c"));
+    //check for another value
+    print!("Did you studied Python {} ", marks.contains_key("Python"));
+
 }
